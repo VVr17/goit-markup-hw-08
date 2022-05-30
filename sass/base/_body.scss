@@ -1,0 +1,10 @@
+body {
+  /* padding-top: 82px; */
+  /* для фиксированного хедера - чтобы под него не заезжал текст*/
+
+  color: $main-text-color;
+  background-color: $white-background-color;
+  font-family: $main-font, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}

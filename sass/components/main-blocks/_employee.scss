@@ -1,0 +1,39 @@
+/*  EMPLOYEES */
+.employee {
+  @extend %flex;
+}
+
+.employee__card {
+  padding-bottom: 30px;
+  text-align: center;
+  border-radius: 0px 0px 4px 4px;
+  margin-right: 30px;
+  flex-basis: calc((100% - 90px) / 4);
+
+  background-color: $white-background-color;
+  box-shadow: $employee-card-shadow;
+
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
+}
+
+.employee__img {
+  margin-bottom: 30px;
+}
+
+.employee__title,
+.employee__text {
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.employee__title {
+  margin-bottom: 10px;
+  color: $secondary-text-color;
+  font-weight: 500;
+}
+
+.employee__text {
+  margin-bottom: 16px;
+}

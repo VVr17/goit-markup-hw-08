@@ -1,0 +1,20 @@
+/*  HEADER */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 80px;
+  z-index: 1;
+
+  background-color: $white-background-color;
+
+  @include bordered($header-border-line-color);
+  // border: 1px solid $header-border-line-color;
+}
+
+.header__container,
+.header__nav {
+  display: flex;
+  align-items: center;
+}

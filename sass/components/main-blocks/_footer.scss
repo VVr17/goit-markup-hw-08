@@ -1,0 +1,27 @@
+/* FOOTER */
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: $footer-bg-color;
+  color: $white-text-color;
+}
+
+.footer__container {
+  @extend %flex;
+  align-items: baseline;
+}
+
+.footer__title {
+  display: inline-block;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: inherit;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+// .footer__socials-container {
+//   margin-right: 93px;
+// }

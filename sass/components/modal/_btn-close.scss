@@ -1,0 +1,29 @@
+/* BUTTON_CLOSE */
+.btn-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-8px, 8px);
+  padding: 0;
+  margin: 0;
+
+  @include circle (30px);
+  @include bordered($modal-btn-close-border);
+  
+  font-size: 0; // удалить пробелы между - inline-block 
+  display: inline-block;
+
+  background-color: transparent;
+  cursor: pointer;
+  color: $black-color;
+  transition: color 250ms $transition-timing;
+
+  &:hover,
+  &:focus {
+    color: $brand-color;
+  }
+}
+
+.btn-close__icon {
+  fill: currentColor;
+}

@@ -1,0 +1,23 @@
+/* ADDRESS */
+.address {
+  margin-right: 70px;
+}
+
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address__link {
+  line-height: 1.71;
+  color: $white-text-color;
+  transition: color 250ms $transition-timing;
+
+  &:hover,
+  &:focus {
+    color:$brand-color;
+  }
+
+  &--grey-color {
+    color: $footer-secondary-text-color;
+  }
+}

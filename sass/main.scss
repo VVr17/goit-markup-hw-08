@@ -1,0 +1,45 @@
+@import "./base/normalize";
+// нормализация через sass
+
+@import "./utils/variables";
+@import "./utils/placeholder";
+@import "./utils/mixin";
+@import "./utils/container";
+
+@import "./base/body";
+@import "./base/reset-styles";
+
+@import "./utils/utils";
+@import "./utils/visually-hidden";
+
+@import "./components/button";
+@import "./components/logo";
+
+@import "./components/main-blocks/header";
+@import "./components/site-nav";
+@import "./components/header-contacts";
+
+@import "./components/main-blocks/hero";
+@import "./components/main-blocks/section"; 
+@import "./components/main-blocks/features";
+@import "./components/main-blocks/work";
+@import "./components/main-blocks/employee";
+@import "./components/socials";
+@import "./components/main-blocks/clients";
+
+@import "./components/portfolio-page/portfolio-filter";
+@import "./components/portfolio-page/portfolio";
+
+@import "./components/main-blocks/footer";
+@import "./components/address";
+@import "./components/distribution-form";
+
+@import "./components/contacts-page/contacts-page";
+
+// MODAL
+@import "./components/modal/backdrop";
+@import "./components/modal/btn-close";
+@import "./components/modal/form";
+
+
+

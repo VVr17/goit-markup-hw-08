@@ -1,0 +1,33 @@
+/* LOGO */
+.logo {
+  display: block;
+
+  text-decoration: none;
+  font-family: $secondary-font, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: $black-color;
+  transition: color 250ms $transition-timing;
+
+
+  &:hover, 
+  &:focus {
+    color: $brand-color;
+  }
+}
+
+.header__logo {
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.footer__logo {
+  margin-bottom: 20px;
+  color: currentColor;
+}
+
+.logo__accent-word {
+  color: $brand-color;
+}
