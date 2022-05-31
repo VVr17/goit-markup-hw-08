@@ -1,0 +1,27 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  padding: 40px;
+  width: 528px;
+  // height: 581px;
+
+  background-color: $white-background-color;
+  transition: transform 250ms $transition-timing;
+}
+
+.backdrop--is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.3);
+}
+
+.modal__title {
+  display: inline-block;
+  margin-bottom: 12px;
+
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $secondary-text-color;
+}

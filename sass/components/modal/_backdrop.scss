@@ -20,20 +20,3 @@
     visibility: hidden;
   }
 }
-
-.backdrop--is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0.3);
-}
-
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  padding: 40px;
-  width: 528px;
-  // height: 581px;
-
-  background-color: $white-background-color;
-  transition: transform 250ms $transition-timing;
-}
