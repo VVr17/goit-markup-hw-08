@@ -1,15 +1,44 @@
 /* FEATURES*/
 .features {
-  @extend %flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .features__item {
-  margin-right: 30px;
-  flex-basis: calc((100% - 90px) / 4);
 
-  &:nth-child(4n) {
-    margin-right: 0;
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-basis: calc((100% - 30px) / 2);
+
+    &:not(:nth-child(2n)){
+      margin-right: 30px;
+    }
+
+    &:not(:nth-child(n+3)) {
+      margin-bottom: 30px;
+    }
+  }
+
+    @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 90px) / 4);
+    
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+
+//  анимация картинки features scene
+.features__scene {
+  margin-bottom: 30px;
+  height: 120px;
 }
 
 .features__container {
@@ -20,33 +49,36 @@
 
   background-color: $secondary-bg-color;
   border-radius: 4px;
-  transform: rotateY(0);
-  transition: transform 500ms $transition-timing;
-}
 
-/* анимация картинки features scene*/
-.features__scene {
-  margin-bottom: 30px;
-  width: 270px;
-  height: 120px;
-}
+  @media screen and (min-width: 1200px) {
+    transform: rotateY(0);
+    transition: transform 500ms $transition-timing;
 
-.features__scene:hover .features__container {
-  transform: rotateY(180deg);
+    .features__scene:hover & {
+      transform: rotateY(180deg);
+    }
+  }
+
 }
 
 .features__title {
+  text-align: center;
   margin-bottom: 10px;
 
   color: $secondary-text-color;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
 }
 
 .features__text {
   line-height: 1.71;
 }
+
 
 // вставлять иконки через background-image
 // .features__item::before {

@@ -1,10 +1,21 @@
 /* ADDRESS */
 .address {
-  margin-right: 70px;
+
+  @media screen and (max-width: 676px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
 }
 
 .address__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
 }
 
 .address__link {

@@ -1,21 +1,23 @@
 /* WORK */
+
 .work {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.work__list {
   @extend %flex;
 }
 
 .work__item {
   position: relative;
-  margin-right: 30px;
   flex-basis: calc((100% - 60px) / 3);
 
-  &:nth-child(3n) {
-    margin-right: 0;
+  &:not(:last-child) {
+    margin-right: 30px;
   }
 }
-
-// .work__item:nth-child(3n) {
-//   margin-right: 0;
-// }
 
 .work__title {
   position: absolute;

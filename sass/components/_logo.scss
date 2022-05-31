@@ -5,22 +5,30 @@
   text-decoration: none;
   font-family: $secondary-font, sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   color: $black-color;
   transition: color 250ms $transition-timing;
-
 
   &:hover, 
   &:focus {
     color: $brand-color;
   }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .header__logo {
-  margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  // margin-right: 93px;
+
+  padding-top: 16px;
+  padding-bottom: 16px;
+  
+  // padding-top: 24px;
+  // padding-bottom: 25px;
 }
 
 .footer__logo {
