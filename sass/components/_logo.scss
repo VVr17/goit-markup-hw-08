@@ -1,41 +1,48 @@
 /* LOGO */
 .logo {
-  display: block;
+	display: block;
 
-  text-decoration: none;
-  font-family: $secondary-font, sans-serif;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.17;
-  color: $black-color;
-  transition: color 250ms $transition-timing;
+	text-decoration: none;
+	font-family: $secondary-font, sans-serif;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 1.17;
+	color: $black-color;
+	transition: color 250ms $transition-timing;
 
-  &:hover, 
-  &:focus {
-    color: $brand-color;
-  }
+	&:hover,
+	&:focus {
+		color: $brand-color;
+	}
 
-  @media screen and (min-width: 1200px) {
-    font-size: 26px;
-    line-height: 1.19;
-  }
+	@media screen and (min-width: 1200px) {
+		font-size: 26px;
+		line-height: 1.19;
+	}
 }
 
 .header__logo {
-  // margin-right: 93px;
+	padding-top: 16px;
+	padding-bottom: 16px;
 
-  padding-top: 16px;
-  padding-bottom: 16px;
-  
-  // padding-top: 24px;
-  // padding-bottom: 25px;
+	@media screen and (min-width: 768px) {
+		margin-right: 88px;
+		padding-top: 26px;
+		padding-bottom: 26px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		margin-right: 93px;
+		padding-top: 23px;
+		padding-bottom: 23px;
+	}
 }
 
 .footer__logo {
-  margin-bottom: 20px;
-  color: currentColor;
+	margin-bottom: 20px;
+	color: currentColor;
 }
 
 .logo__accent-word {
-  color: $brand-color;
+	color: $brand-color;
 }

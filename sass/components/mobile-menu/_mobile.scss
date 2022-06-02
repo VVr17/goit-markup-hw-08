@@ -1,0 +1,75 @@
+.menu {
+	@media screen and (max-width: 767px) {
+		position: absolute;
+		z-index: 5;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		// min-width: 320px;
+		height: 100vh;
+		padding: 48px 40px;
+
+		background-color: $white-background-color;
+
+		opacity: 0;
+		pointer-events: none;
+		visibility: hidden;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		transition: opacity 250ms $transition-timing, visibility 250ms $transition-timing;
+	}
+
+	@media screen and (min-width: 768px) {
+		display: flex;
+		align-items: center;
+		width: 100%;
+	}
+}
+
+.menu__wrapper {
+	@media screen and (min-width: 768px) {
+		margin-left: auto;
+	}
+}
+
+.menu--is-open {
+	@media screen and (max-width: 767px) {
+		visibility: visible;
+		opacity: 1;
+		pointer-events: all;
+	}
+}
+
+.menu-socials {
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+
+	@media screen and (min-width: 768px) {
+		display: none;
+	}
+}
+
+.menu-socials__item {
+	color: $brand-color;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 1.22;
+	letter-spacing: 0.02em;
+
+	&:not(:last-child) {
+		margin-right: 20px;
+	}
+}
+
+.menu-socials__link {
+	color: currentColor;
+	transition: color 250ms $transition-timing;
+
+	&:hover,
+	&:focus {
+		color: $button-hover-color;
+	}
+}

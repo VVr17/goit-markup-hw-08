@@ -1,31 +1,90 @@
 /* CONTACTS*/
-// .contacts {
-//   display: flex;
-//   margin-left: auto;
-// }
+.contacts {
+	@media screen and (max-width: 767px) {
+		display: flex;
+		flex-direction: column-reverse;
+		margin-bottom: 64px;
+	}
 
-// .contacts__item:not(:last-child) {
-//   margin-right: 50px;
-// }
+	@media screen and (min-width: 1200px) {
+		display: flex;
+		align-items: center;
+	}
+}
 
-// .contacts__link {
-//   display: block;
-//   padding-top: 32px;
-//   padding-bottom: 32px;
+.contacts__item {
+	@media screen and (max-width: 767px) {
+		&:last-child {
+			margin-bottom: 32px;
+		}
+	}
 
-//   font-weight: 500;
-//   line-height: 1.14;
-//   letter-spacing: 0.02em;
-//   transition: color 250ms $transition-timing;
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+	}
 
-//   &:hover,
-//   &:focus {
-//     color:$brand-color;
-//   }
-// }
+	@media screen and (min-width: 1200px) {
+		&:not(:last-child) {
+			margin-right: 50px;
+		}
+	}
+}
 
-// .contacts__icon {
-//   margin-right: 10px;
-//   fill: currentColor;
-//   vertical-align: middle;
-// }
+.contacts__link {
+	&:hover,
+	&:focus {
+		color: $brand-color;
+	}
+
+	@media screen and (max-width: 480px) {
+		font-size: calc(1em + 4vw);
+	}
+
+	font-size: 34px;
+	font-weight: 500;
+	line-height: 1.18;
+	letter-spacing: 0.02em;
+	transition: color 250ms $transition-timing;
+
+	@media screen and (min-width: 768px) {
+		display: flex;
+		font-size: 12px;
+		line-height: 1.14;
+	}
+
+	@media screen and (min-width: 1200px) {
+		display: block;
+		padding-top: 31px;
+		padding-bottom: 31px;
+	}
+}
+
+.contacts__link--email {
+	@media screen and (max-width: 767px) {
+		font-size: 24px;
+		line-height: 1.17;
+	}
+}
+
+.contacts__link--phone {
+	@media screen and (max-width: 767px) {
+		color: $brand-color;
+
+		&:hover,
+		&:focus {
+			color: $button-hover-color;
+		}
+	}
+}
+
+.contacts__icon {
+	@media screen and (max-width: 767px) {
+		display: none;
+	}
+
+	margin-right: 10px;
+	fill: currentColor;
+	vertical-align: middle;
+}

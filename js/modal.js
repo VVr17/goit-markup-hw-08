@@ -10,6 +10,7 @@
 
   function toggleModal() {
     refs.modal.classList.toggle("backdrop--is-hidden");
+    document.body.classList.toggle("modal-open");
   }
 };
 

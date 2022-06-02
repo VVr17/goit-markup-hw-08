@@ -1,153 +1,155 @@
 /* FORM */
 
 .form__label {
-  // position: relative;
-  margin-bottom: 10px;
-  display: flex;
-  flex-direction: column;
+	margin-bottom: 10px;
+	display: flex;
+	flex-direction: column;
 
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
+	font-size: 12px;
+	line-height: 1.16;
+	letter-spacing: 0.01em;
 
-  &--margin {
-      margin-bottom: 20px;
-    }
+	&--margin {
+		margin-bottom: 20px;
+	}
 }
 
 .form__text {
-  margin-bottom: 4px;
+	margin-bottom: 4px;
 }
 
 .form__input {
-  width: 100%;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 42px;
-  padding-right: 12px;
-  outline: transparent;
+	width: 100%;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 42px;
+	padding-right: 12px;
+	outline: transparent;
 
-  @include bordered ($modal-input-border-color);
-  border-radius: 4px;
-  transition: border-color 250ms $transition-timing;
+	@include bordered($modal-input-border-color);
+	border-radius: 4px;
+	transition: border-color 250ms $transition-timing;
 
-  &:focus {
-    border-color: $brand-color;
-  }
+	&:focus {
+		border-color: $brand-color;
+	}
 
-  &::placeholder {
-    color: $placeholder-text;
-  }
+	&::placeholder {
+		color: $placeholder-text;
+	}
 
-  &--padding {
-    padding-left: 16px;
-    padding-right: 16px;
-    resize: none;
-  }
+	&--padding {
+		padding-left: 16px;
+		padding-right: 16px;
+		resize: none;
+	}
 }
 
 .form__wrapper {
-  position: relative;
+	position: relative;
 }
 
 .form__icon {
-  position: absolute;
-  top: 50%;
-  left: 12px;
+	position: absolute;
+	top: 50%;
+	left: 12px;
 
-  fill: $secondary-text-color;
-  transition: fill 250ms $transition-timing;
-  transform: translateY(-50%);
+	fill: $secondary-text-color;
+	transition: fill 250ms $transition-timing;
+	transform: translateY(-50%);
 
-  .form__input:focus + & {
-    fill: $brand-color;
-  }
+	.form__input:focus + & {
+		fill: $brand-color;
+	}
 }
 
 .form__assistance-message {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  transform: translateY(100%);
-  font-size: 10px;
-  color: $work-description-bg-color;
-  opacity: 0;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	transform: translateY(100%);
+	font-size: 10px;
+	color: $work-description-bg-color;
+	opacity: 0;
 
-  .form__input:focus ~ & {
-    opacity: 1;
-  }
-
+	.form__input:focus ~ & {
+		opacity: 1;
+	}
 }
 
 .conditions {
-  @include centeredFlex;
-  margin-bottom: 30px;
+	@include centeredFlex;
+	margin-bottom: 30px;
 
-  font-size: 14px;
-  line-height: 2;
-  letter-spacing: 0.03em;
+	font-size: 12px;
+	line-height: 1.16;
+	letter-spacing: 0.03em;
+
+	@media screen and (min-width: 1200px) {
+		font-size: 14px;
+		line-height: 2;
+	}
 }
 
 .conditions__checkbox {
-// удалить браузерный checkbox из потока и визуально
-// -webkit-appearance: none;
-//   -moz-appearance: none;
-//   appearance: none;
-//   position: absolute;
+	// удалить браузерный checkbox из потока и визуально
+	// -webkit-appearance: none;
+	//   -moz-appearance: none;
+	//   appearance: none;
+	//   position: absolute;
 
-// или через visually-hidden
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+	// или через visually-hidden
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
 }
 
 .conditions__icon-thumb {
-  @include centeredFlex;
-  
-  margin-right: 7px;
-  transform: translateY(-2px);
-  width: 16px;
-  height: 15px;
+	@include centeredFlex;
 
-  font-size: 0;
-  border-radius: 2px;
-  border: 2px solid $secondary-text-color;
-  background-color: $white-background-color;
-  transition: border-color 250ms $transition-timing,
-    background-color 250ms $transition-timing;
+	margin-right: 7px;
+	transform: translateY(-2px);
+	width: 16px;
+	height: 15px;
 
-  .conditions__checkbox:focus ~ & {
-    outline: 2px solid $button-hover-color;
-  }
-  
-  .conditions__checkbox:checked ~ & {
-    border-color: $brand-color;
-    background-color: $brand-color;
-  }
+	font-size: 0;
+	border-radius: 2px;
+	border: 2px solid $secondary-text-color;
+	background-color: $white-background-color;
+	transition: border-color 250ms $transition-timing, background-color 250ms $transition-timing;
 
-  .conditions__checkbox:focus:checked ~ & {
-    background-color: $brand-color;
-    outline: 2px solid $button-hover-color;
-  }
+	.conditions__checkbox:focus ~ & {
+		outline: 2px solid $button-hover-color;
+	}
+
+	.conditions__checkbox:checked ~ & {
+		border-color: $brand-color;
+		background-color: $brand-color;
+	}
+
+	.conditions__checkbox:focus:checked ~ & {
+		background-color: $brand-color;
+		outline: 2px solid $button-hover-color;
+	}
 }
 
 .conditions__text {
-  padding-right: 5px;
+	padding-right: 5px;
 }
 
 .conditions__link {
-  color: $brand-color;
-  text-decoration-line: underline;
-  border-radius: 2px;
+	color: $brand-color;
+	text-decoration-line: underline;
+	border-radius: 2px;
 
-  &:focus {
-    outline: 2px solid $button-hover-color;
-  }
+	&:focus {
+		outline: 2px solid $button-hover-color;
+	}
 }
