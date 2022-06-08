@@ -1,34 +1,33 @@
 /* ADDRESS */
 .address {
+	@media screen and (max-width: 767.98px) {
+		margin-bottom: 60px;
+	}
 
-  @media screen and (max-width: 676px) {
-    margin-bottom: 60px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    margin-right: 70px;
-  }
+	@media screen and (min-width: 1200px) {
+		margin-right: 70px;
+	}
 }
 
 .address__item:not(:last-child) {
-  margin-bottom: 8px;
+	margin-bottom: 8px;
 
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 9px;
-  }
+	@media screen and (min-width: 1200px) {
+		margin-bottom: 9px;
+	}
 }
 
 .address__link {
-  line-height: 1.71;
-  color: $white-text-color;
-  transition: color 250ms $transition-timing;
+	line-height: 1.71;
+	color: $white-text-color;
+	transition: color 250ms $transition-timing;
 
-  &:hover,
-  &:focus {
-    color:$brand-color;
-  }
+	&:hover,
+	&:focus {
+		color: $brand-color;
+	}
 
-  &--grey-color {
-    color: $footer-secondary-text-color;
-  }
+	&--grey-color {
+		color: $footer-secondary-text-color;
+	}
 }

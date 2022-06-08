@@ -1,65 +1,65 @@
 /*  EMPLOYEES */
 .employee {
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
-  }
+	@media screen and (min-width: 768px) {
+		display: flex;
+		flex-wrap: wrap;
+	}
 }
 
 .employee__card {
-  padding-bottom: 24px;
+	padding-bottom: 24px;
 
-  text-align: center;
-  border-radius: 0px 0px 4px 4px;
-  background-color: $white-background-color;
-  box-shadow: $employee-card-shadow;
+	text-align: center;
+	border-radius: 0px 0px 4px 4px;
+	background-color: $white-background-color;
+	box-shadow: $employee-card-shadow;
 
-  @media screen and (max-width: 767px) {
-    &:not(:last-child) {
-      margin-bottom: 30px;
-    }
-  }
+	@media screen and (max-width: 767.98px) {
+		&:not(:last-child) {
+			margin-bottom: 30px;
+		}
+	}
 
-  @media screen and (min-width: 768px) and (max-width:1199px) {
-    flex-basis: calc((100% - 30px) / 2);
+	@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+		flex-basis: calc((100% - 30px) / 2);
 
-    &:not(:nth-child(2n)) {
-      margin-right: 30px;;
-    }
+		&:not(:nth-child(2n)) {
+			margin-right: 30px;
+		}
 
-    &:not(:nth-child(n+3)) {
-      margin-bottom: 30px;
-    }
-  }
+		&:not(:nth-child(n + 3)) {
+			margin-bottom: 30px;
+		}
+	}
 
-  @media screen and (min-width: 1200px) {
-    padding-bottom: 30px;
-    flex-basis: calc((100% - 90px) / 4);
+	@media screen and (min-width: 1200px) {
+		padding-bottom: 30px;
+		flex-basis: calc((100% - 90px) / 4);
 
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
-  }
+		&:not(:last-child) {
+			margin-right: 30px;
+		}
+	}
 }
 
 .employee__img {
-  width: 100%;
-  // проверить ширину по видео -- в html остается width height
-  margin-bottom: 30px;
+	width: 100%;
+	// проверить ширину по видео -- в html остается width height
+	margin-bottom: 30px;
 }
 
 .employee__title,
 .employee__text {
-  font-size: 16px;
-  line-height: 1.19;
+	font-size: 16px;
+	line-height: 1.19;
 }
 
 .employee__title {
-  margin-bottom: 10px;
-  color: $secondary-text-color;
-  font-weight: 500;
+	margin-bottom: 10px;
+	color: $secondary-text-color;
+	font-weight: 500;
 }
 
 .employee__text {
-  margin-bottom: 16px;
+	margin-bottom: 16px;
 }

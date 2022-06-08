@@ -6,7 +6,7 @@
 }
 
 .site-nav__item {
-	@media screen and (max-width: 767px) {
+	@media screen and (max-width: 767.98px) {
 		&:not(:last-child) {
 			margin-bottom: 32px;
 		}
@@ -19,51 +19,48 @@
 			margin-right: 50px;
 		}
 	}
-}
 
-.site-nav__link {
-	font-weight: 500;
-	font-size: 40px;
-	line-height: 1.18;
-	text-align: center;
-	letter-spacing: 0.02em;
+	.site-nav__link {
+		font-weight: 500;
+		font-size: 40px;
+		line-height: 1.18;
+		text-align: center;
+		letter-spacing: 0.02em;
 
-	// line-height: 1.14;
-	// letter-spacing: 0.02em;
-	transition: color 250ms $transition-timing;
-	color: $secondary-text-color;
+		transition: color 250ms $transition-timing;
+		color: $secondary-text-color;
 
-	&:hover,
-	&:focus,
-	&--current {
-		color: $brand-color;
-	}
+		&:hover,
+		&:focus,
+		&--current {
+			color: $brand-color;
+		}
 
-	@media screen and (min-width: 768px) {
-		display: block;
-		padding-top: 31px;
-		padding-bottom: 31px;
-
-		font-size: 14px;
-		line-height: 1.33px;
-
-		&::after {
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			content: "";
+		@media screen and (min-width: 768px) {
 			display: block;
-			transform: translateY(+9px);
-			width: 100%;
-			height: 4px;
+			padding-top: 31px;
+			padding-bottom: 31px;
 
-			border-radius: 2px;
-			background-color: $brand-color;
-			opacity: 0;
+			font-size: 14px;
+			line-height: 1.14;
 
-			// Анимация подчеркивания
-			// transform: scale(0);
-			// transition: transform 250ms $transition-timing;
+			&::after {
+				position: absolute;
+				bottom: -1px;
+				left: 0;
+				content: "";
+				display: block;
+				width: 100%;
+				height: 4px;
+
+				border-radius: 2px;
+				background-color: $brand-color;
+				opacity: 0;
+
+				// Анимация подчеркивания
+				// transform: scale(0);
+				// transition: transform 250ms $transition-timing;
+			}
 		}
 
 		&--current::after {

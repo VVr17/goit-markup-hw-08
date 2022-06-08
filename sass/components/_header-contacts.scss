@@ -1,6 +1,6 @@
 /* CONTACTS*/
 .contacts {
-	@media screen and (max-width: 767px) {
+	@media screen and (max-width: 767.98px) {
 		display: flex;
 		flex-direction: column-reverse;
 		margin-bottom: 64px;
@@ -13,13 +13,13 @@
 }
 
 .contacts__item {
-	@media screen and (max-width: 767px) {
+	@media screen and (max-width: 767.98px) {
 		&:last-child {
 			margin-bottom: 32px;
 		}
 	}
 
-	@media screen and (min-width: 768px) and (max-width: 1199px) {
+	@media screen and (min-width: 768px) and (max-width: 1199.98px) {
 		&:not(:last-child) {
 			margin-bottom: 10px;
 		}
@@ -38,7 +38,7 @@
 		color: $brand-color;
 	}
 
-	@media screen and (max-width: 480px) {
+	@media screen and (max-width: 479.98px) {
 		font-size: calc(1em + 4vw);
 	}
 
@@ -62,14 +62,14 @@
 }
 
 .contacts__link--email {
-	@media screen and (max-width: 767px) {
+	@media screen and (max-width: 767.98px) {
 		font-size: 24px;
 		line-height: 1.17;
 	}
 }
 
 .contacts__link--phone {
-	@media screen and (max-width: 767px) {
+	@media screen and (max-width: 767.98px) {
 		color: $brand-color;
 
 		&:hover,
@@ -80,7 +80,7 @@
 }
 
 .contacts__icon {
-	@media screen and (max-width: 767px) {
+	@media screen and (max-width: 767.98px) {
 		display: none;
 	}
 
