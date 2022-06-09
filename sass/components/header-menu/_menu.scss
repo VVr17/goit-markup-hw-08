@@ -100,23 +100,30 @@
 	&:focus {
 		color: $brand-color;
 	}
-
-	@media screen and (max-width: 412px) {
-		font-size: calc(1em + 4vw);
-	}
 }
 
 .menu__contact-link--email {
 	font-size: 24px;
 	line-height: 1.17;
 
-	@media screen and (max-width: 412px) {
+	@media screen and (max-width: 311px) {
+		font-size: calc(1em + 2vw);
+	}
+
+	@media screen and (min-width: 312px) and (max-width: 412px) {
 		font-size: calc(1em + 3vw);
 	}
 }
 
 .menu__contact-link--phone {
 	color: $brand-color;
+	@media screen and (max-width: 311px) {
+		font-size: calc(1em + 2vw);
+	}
+
+	@media screen and (min-width: 312px) and (max-width: 412px) {
+		font-size: calc(1em + 4vw);
+	}
 
 	&:hover,
 	&:focus {
@@ -137,27 +144,30 @@
 	line-height: 1.22;
 	letter-spacing: 0.02em;
 
-	padding-left: 10px;
 	padding-right: 10px;
+
+	&:not(:first-child) {
+		padding-left: 10px;
+	}
 
 	&:not(:last-child) {
 		// margin-right: 20px;
 		border-right: 1px solid $white-text-color;
 	}
 
-	@media screen and (max-width: 368.98px) {
+	@media screen and (max-width: 357.98px) {
 		&:nth-child(2n-1) {
 			border-color: $modal-input-border-color;
 		}
 	}
 
-	@media screen and (min-width: 369px) {
+	@media screen and (min-width: 358px) {
 		&:nth-child(-n + 2) {
 			border-color: $modal-input-border-color;
 		}
 	}
 
-	@media screen and (min-width: 460px) {
+	@media screen and (min-width: 449.98px) {
 		&:nth-child(3n) {
 			border-color: $modal-input-border-color;
 		}
