@@ -1,9 +1,14 @@
 /* CONTACTS*/
 .contacts {
 	@media screen and (max-width: 767.98px) {
-		display: flex;
-		flex-direction: column-reverse;
-		margin-bottom: 64px;
+		display: none;
+		// display: flex;
+		// flex-direction: column-reverse;
+		// margin-bottom: 64px;
+	}
+
+	@media screen and (min-width: 768px) {
+		margin-left: auto;
 	}
 
 	@media screen and (min-width: 1200px) {
@@ -13,12 +18,6 @@
 }
 
 .contacts__item {
-	@media screen and (max-width: 767.98px) {
-		&:last-child {
-			margin-bottom: 32px;
-		}
-	}
-
 	@media screen and (min-width: 768px) and (max-width: 1199.98px) {
 		&:not(:last-child) {
 			margin-bottom: 10px;
@@ -38,21 +37,9 @@
 		color: $brand-color;
 	}
 
-	@media screen and (max-width: 479.98px) {
-		font-size: calc(1em + 4vw);
-	}
-
-	font-size: 34px;
-	font-weight: 500;
-	line-height: 1.18;
-	letter-spacing: 0.02em;
-	transition: color 250ms $transition-timing;
-
-	@media screen and (min-width: 768px) {
-		display: flex;
-		font-size: 12px;
-		line-height: 1.14;
-	}
+	display: flex;
+	font-size: 12px;
+	line-height: 1.14;
 
 	@media screen and (min-width: 1200px) {
 		display: block;
@@ -62,28 +49,18 @@
 }
 
 .contacts__link--email {
-	@media screen and (max-width: 767.98px) {
-		font-size: 24px;
-		line-height: 1.17;
+	@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+		padding-top: 20px;
 	}
 }
 
 .contacts__link--phone {
-	@media screen and (max-width: 767.98px) {
-		color: $brand-color;
-
-		&:hover,
-		&:focus {
-			color: $button-hover-color;
-		}
+	@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+		padding-bottom: 20px;
 	}
 }
 
 .contacts__icon {
-	@media screen and (max-width: 767.98px) {
-		display: none;
-	}
-
 	margin-right: 10px;
 	fill: currentColor;
 	vertical-align: middle;
